@@ -4,14 +4,24 @@
   --light-green: #2b7553;
   --primary-beige: #dcc1ab;
   --grey: #f5f0ec;
+  --black: #111;
+  --white: #fff;
 }
 /* global style */
 body {
   scroll-behavior: smooth;
   font-family: Inter;
+  font-style: normal;
 }
-.flexController {
+.inter-font {
+  font-family: Inter;
+}
+.container-xxl {
+  max-width: 1440px;
+}
+.flex-controller {
   flex-direction: column;
+  flex-wrap: wrap;
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -19,20 +29,52 @@ body {
 .header-font {
   font-family: Montserrat;
   font-weight: 500;
+  line-height: 115%;
 }
-/* header style */
-.headerBackground {
-  background-color: var(--primary-beige);
+.img-fluid {
+  height: 100%;
 }
-.headerText {
-  font-size: 16px;
+.color-green {
+  color: var(--primary-green);
+}
+.section-paragraph {
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  letter-spacing: -0.12px;
 }
-.headerImage {
-  height: 100vh;
-  max-height: 635px;
-  background-size: cover;
+/* navigation style */
+.page-navbar {
+  padding: 16px 0;
+  @media (min-width: 992px) {
+    padding: 16px 85px;
+  }
+}
+#navLinks {
+  @media (min-width: 992px) {
+    gap: 48px;
+  }
+}
+
+/* header style */
+.hero-section {
+  background-color: var(--primary-beige);
+}
+.hero-header {
+  line-height: 116%;
+}
+.hero-header-container {
+  width: 100%;
+  max-width: 599px;
+  padding: 40px 0;
+}
+.hero-text {
+  margin-top: 44px;
+  margin-bottom: 72px;
+  width: 100%;
+  max-width: 490px;
 }
 
 /* header buttons */
@@ -49,6 +91,7 @@ body {
 .custom-primary-btn {
   background-color: var(--primary-green);
   color: var(--grey);
+  min-width: 160px;
 }
 .custom-primary-btn:hover {
   border: 1px solid var(--primary-green);
@@ -57,6 +100,7 @@ body {
 .custom-secondary-btn {
   border: 1px solid var(--primary-green);
   color: var(--primary-green);
+  min-width: 160px;
 }
 .custom-secondary-btn:hover {
   background-color: var(--primary-green);
@@ -84,7 +128,7 @@ body {
   right: 0;
   width: 120px;
   height: 60px;
-  background-color: var(--primary-beige);
+  background-color: var(--grey);
 }
 #header-carousel {
   width: 100%;
@@ -98,6 +142,16 @@ body {
 .carousel-item {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .carousel-item img {
   width: 100%;
@@ -105,23 +159,119 @@ body {
 }
 
 /* Offer section */
-
-.offer-section {
+.offer {
   background-color: var(--grey);
-  padding: 120px 0 160px;
+  padding: 120px 20px 160px;
 }
-
-.offer-flex {
-  gap: 96px;
+.offer-section-header {
+  width: 100%;
+  max-width: 1040px;
 }
-
-.offer-card {
-  background-color: transparent;
-  max-width: 709px;
+.offer-header {
+  line-height: 115%;
+  letter-spacing: -1.4px;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+.offer-header-description {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.16px;
+}
+.offer-section-cards {
+  gap: 69px;
+  justify-content: space-evenly;
+  margin-top: 96px;
+}
+.offer-box {
+  padding: 40px 48px;
+  background-color: var(--white);
+  border-radius: 28px;
+  width: 100%;
+  max-width: 378px;
+  cursor: pointer;
+  transition: 1s;
+}
+.offer-box:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+.offer-icon {
+  margin-bottom: 32px;
+}
+.offer-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+  margin-bottom: 63px;
+}
+.offer-title {
+  font-size: 28px;
+  line-height: 115%;
+  letter-spacing: -1.4px;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+.offer-link,
+.offer-link i {
+  text-decoration: none;
+  transition: 500ms;
+  color: var(--primary-green);
+}
+.offer-link {
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--primary-green);
+}
+.offer-link:hover {
+  border-bottom: 1px solid var(--primary-beige);
+}
+.offer-link:hover,
+.offer-link:hover i {
+  color: var(--primary-beige);
 }
 
 /* about company section */
-.about-company {
+.about-company-section {
   background-color: var(--primary-green);
+  box-sizing: border-box;
+}
+.about-company {
   color: var(--grey);
+  padding: 30px 30px;
+  justify-content: center;
+  @media (min-width: 992px) {
+    justify-content: end;
+  }
+}
+.max-width-custom {
+  max-width: 100%;
+}
+.about-company .header-font {
+  font-size: 48px;
+  line-height: 115%;
+  letter-spacing: -1.44px;
+  max-width: 250px;
+}
+.about-company-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.16px;
+  width: 100%;
+  font-style: normal;
+  max-width: 500px;
+}
+.about-info-container {
+  max-width: 500px;
+}
+/* projects */
+.projects {
+  background-color: var(--primary-beige);
+  padding: 120px 0 44px;
+  margin-bottom: 60px;
+}
+
+.projects-header-section {
+  margin-bottom: 96px;
 }
