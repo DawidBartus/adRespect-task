@@ -10,6 +10,12 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/7b4ac5dfbb.js"
@@ -42,17 +48,15 @@
           <ul class="navbar-nav d-flex gap-5" id="navLinks">
             <!-- dropdown -->
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                id="contactNav"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Oferta
-              </a>
+              </button>
+
               <div class="dropdown-menu" aria-labelledby="contactNav">
                 <a class="dropdown-item" href="#">Modernizajce</a>
                 <a class="dropdown-item" href="#">Projektowanie</a>
@@ -62,7 +66,7 @@
             </li>
             <!--end dropdown -->
             <li class="nav-item">
-              <a class="nav-link active" href="#hotel"
+              <a class="nav-link active" href="#about"
                 >O firmie <span class="sr-only"></span
               ></a>
             </li>
@@ -86,13 +90,13 @@
     <div class="container">
       <div class="row row-cols g-3">
         <div class="col">
-          <div class="card mb-3" style="max-width: 100%; border: none">
+          <div class="card" style="max-width: 100%">
             <div class="row g-0">
               <div
                 class="col-md-6 text-start d-flex align-items-center headerBackground"
               >
                 <div class="card-body">
-                  <h2 class="card-title display-4">
+                  <h2 class="card-title display-4 header-font">
                     Nowoczesna aranżacja Twojego ogrodu
                   </h2>
                   <p class="card-text">
@@ -105,14 +109,27 @@
                       href=""
                       class="btn btn-rounded custom-primary-btn"
                       role="button"
-                      >Skontaktujm się z nami</a
-                    ><a
+                      >Skontaktuj się z nami
+                    </a>
+                    <a
                       href=""
                       class="btn btn-rounded custom-secondary-btn"
                       role="button"
                       >Zobacz nasze realizcję
-                      <i class="fa-solid fa-arrow-right fa-rotate-90"></i
-                    ></a>
+                      <svg
+                        id="arrowDown"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                      >
+                        <path
+                          d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00472 16.5L16 8.49529Z"
+                          fill="#1B5B31"
+                        />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -202,85 +219,87 @@
     </div>
 
     <!-- offer section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <p class="card-text">
-              <small class="text-muted">Oferta</small>
-            </p>
-            <h2 class="card-title">Działamy kompleksowo</h2>
-            <div class="card-body">
-              Oferujemy kompletną obsługę inwestycji terenów zielonych.
-              Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
-              Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w
-              życie, a na każdym etapie posłużymy radą i wieloletnim
-              doświadczeniem.
+    <div class="container-fluid offerSection">
+      <div class="container">
+        <div class="row d-flex offerFlex">
+          <div class="col-12">
+            <div class="card offerCard">
+              <p class="card-text">
+                <small class="text-muted">Oferta</small>
+              </p>
+              <h2 class="card-title header-font">Działamy kompleksowo</h2>
+              <div class="card-body">
+                Oferujemy kompletną obsługę inwestycji terenów zielonych.
+                Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+                Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w
+                życie, a na każdym etapie posłużymy radą i wieloletnim
+                doświadczeniem.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="col-sm">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">
-                    Card subtitle
-                  </h6>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="card-link"
-                    >Card link
-                    <i
-                      class="fa-solid fa-arrow-right"
-                      style="color: #000000"
-                    ></i
-                  ></a>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-sm">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Card subtitle
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="card-link"
+                      >Card link
+                      <i
+                        class="fa-solid fa-arrow-right"
+                        style="color: #000000"
+                      ></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">
-                    Card subtitle
-                  </h6>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="card-link"
-                    >Card link
-                    <i
-                      class="fa-solid fa-arrow-right"
-                      style="color: #000000"
-                    ></i
-                  ></a>
+              <div class="col-sm">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Card subtitle
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="card-link"
+                      >Card link
+                      <i
+                        class="fa-solid fa-arrow-right"
+                        style="color: #000000"
+                      ></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">
-                    Card subtitle
-                  </h6>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="card-link"
-                    >Card link
-                    <i
-                      class="fa-solid fa-arrow-right"
-                      style="color: #000000"
-                    ></i
-                  ></a>
+              <div class="col-sm">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">
+                      Card subtitle
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="card-link"
+                      >Card link
+                      <i
+                        class="fa-solid fa-arrow-right"
+                        style="color: #000000"
+                      ></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -289,7 +308,7 @@
       </div>
     </div>
     <!-- about company  -->
-    <div class="container">
+    <div class="container" id="about">
       <div class="row row-cols g-3">
         <div class="col">
           <div class="card mb-3" style="max-width: 100%; border: none">
@@ -306,7 +325,7 @@
                   <p class="card-text">
                     <small class="text-muted">O firmie</small>
                   </p>
-                  <h2 class="card-title">Tworzymy z pasją</h2>
+                  <h2 class="card-title header-font">Tworzymy z pasją</h2>
                   <p class="card-text">
                     Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
                     wykwalifikowani projektanci oraz architekci, których

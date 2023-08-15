@@ -3,7 +3,7 @@
   --primary-green: #1b5b31;
   --light-green: #2b7553;
   --primary-beige: #dcc1ab;
-  --text-light: #f5f0ec;
+  --grey: #f5f0ec;
 }
 /* global style */
 body {
@@ -15,6 +15,10 @@ body {
   @media (min-width: 768px) {
     flex-direction: row;
   }
+}
+.header-font {
+  font-family: Montserrat;
+  font-weight: 500;
 }
 /* header style */
 .headerBackground {
@@ -38,12 +42,13 @@ body {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 400;
+  font-family: Inter;
   line-height: 150%;
 }
 
 .custom-primary-btn {
   background-color: var(--primary-green);
-  color: var(--text-light);
+  color: var(--grey);
 }
 .custom-primary-btn:hover {
   border: 1px solid var(--primary-green);
@@ -55,15 +60,16 @@ body {
 }
 .custom-secondary-btn:hover {
   background-color: var(--primary-green);
-  color: var(--text-light);
+  color: var(--grey);
 }
 .custom-secondary-btn > i {
   transition: color 500ms;
   font-size: 16px;
   color: var(--primary-green);
 }
-.custom-secondary-btn:hover > i {
-  color: var(--text-light);
+.custom-secondary-btn:hover path {
+  transition: 500ms;
+  fill: var(--grey);
 }
 
 /* card style */
@@ -96,4 +102,20 @@ body {
 .carousel-item img {
   width: 100%;
   height: 100%;
+}
+
+/* Offer section */
+
+.offerSection {
+  background-color: var(--grey);
+  padding: 120px 0 160px;
+}
+
+.offerFlex {
+  gap: 96px;
+}
+
+.offerCard {
+  background-color: transparent;
+  max-width: 709px;
 }
