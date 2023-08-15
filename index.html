@@ -25,7 +25,7 @@
   <body>
     <!-- nav section -->
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
+      <div class="container" style="padding: 0 89px">
         <a class="navbar-brand" href="#"
           ><span class="fw-bold">giard</span>deisgn</a
         >
@@ -116,6 +116,7 @@
                       class="btn btn-rounded custom-secondary-btn"
                       role="button"
                       >Zobacz nasze realizcję
+
                       <svg
                         id="arrowDown"
                         xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +137,7 @@
               <div class="col-md-6">
                 <!-- carousel -->
                 <div
-                  id="headerCarousel"
+                  id="header-carousel"
                   class="carousel slide position-relative"
                   data-ride="carousel"
                 >
@@ -183,29 +184,47 @@
                     </div>
                   </div>
 
-                  <div class="carouselControlIcons">
+                  <div
+                    class="carousel-control-icons d-flex justify-content-center"
+                  >
                     <button
-                      class="carousel-control-prev"
+                      class="btn"
                       type="button"
-                      data-bs-target="#headerCarousel"
+                      data-bs-target="#header-carousel"
                       data-bs-slide="prev"
                     >
-                      <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="24"
+                        viewBox="0 0 27 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M0.795115 10.9393C0.209328 11.5251 0.209328 12.4749 0.795114 13.0607L10.3411 22.6066C10.9268 23.1924 11.8766 23.1924 12.4624 22.6066C13.0482 22.0208 13.0482 21.0711 12.4624 20.4853L3.97709 12L12.4624 3.51472C13.0482 2.92893 13.0482 1.97918 12.4624 1.3934C11.8766 0.80761 10.9268 0.80761 10.3411 1.3934L0.795115 10.9393ZM26.1442 10.5L1.85577 10.5L1.85577 13.5L26.1442 13.5L26.1442 10.5Z"
+                          fill="black"
+                        />
+                      </svg>
                       <span class="visually-hidden">Previous</span>
                     </button>
                     <button
-                      class="carousel-control-next"
+                      class="btn"
                       type="button"
-                      data-bs-target="#headerCarousel"
+                      data-bs-target="#header-carousel"
                       data-bs-slide="next"
                     >
-                      <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="24"
+                        viewBox="0 0 27 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z"
+                          fill="black"
+                        />
+                      </svg>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
@@ -219,11 +238,11 @@
     </div>
 
     <!-- offer section -->
-    <div class="container-fluid offerSection">
+    <div class="container-fluid offer-section">
       <div class="container">
-        <div class="row d-flex offerFlex">
+        <div class="row d-flex offer-flex">
           <div class="col-12">
-            <div class="card offerCard">
+            <div class="card offer-card">
               <p class="card-text">
                 <small class="text-muted">Oferta</small>
               </p>
@@ -320,11 +339,9 @@
                   class="img-fluid"
                 />
               </div>
-              <div class="col-md-6 text-start">
+              <div class="col-md-6 text-start about-company">
                 <div class="card-body">
-                  <p class="card-text">
-                    <small class="text-muted">O firmie</small>
-                  </p>
+                  <p class="card-text badge">O firmie</p>
                   <h2 class="card-title header-font">Tworzymy z pasją</h2>
                   <p class="card-text">
                     Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą

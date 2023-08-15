@@ -78,7 +78,7 @@ body {
 }
 
 /* carousel */
-.carouselControlIcons {
+.carousel-control-icons {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -86,7 +86,7 @@ body {
   height: 60px;
   background-color: var(--primary-beige);
 }
-#headerCarousel {
+#header-carousel {
   width: 100%;
   height: 100%;
 }
@@ -106,16 +106,22 @@ body {
 
 /* Offer section */
 
-.offerSection {
+.offer-section {
   background-color: var(--grey);
   padding: 120px 0 160px;
 }
 
-.offerFlex {
+.offer-flex {
   gap: 96px;
 }
 
-.offerCard {
+.offer-card {
   background-color: transparent;
   max-width: 709px;
+}
+
+/* about company section */
+.about-company {
+  background-color: var(--primary-green);
+  color: var(--grey);
 }
