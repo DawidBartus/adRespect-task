@@ -1,0 +1,13 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.headerImage {
+  height: 100vh;
+  max-height: 635px;
+  background-size: cover;
+}
+
+.card {
+  border: none;
+}
