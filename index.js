@@ -25,6 +25,8 @@ window.onload = () => {
   const msnry = new Masonry(elem, {
     // options
     itemSelector: ".grid-item",
-    gutter: 10,
+    gutter: 42,
+
+    fitWidth: true,
   });
 };

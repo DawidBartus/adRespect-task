@@ -283,7 +283,14 @@ body {
 }
 
 /* test */
+.grid {
+  margin: 0 auto;
+}
 .grid-item img {
-  width: 451px;
+  width: 100%;
+  max-width: 451px;
   height: auto;
+}
+.grid-item {
+  margin-bottom: 42px;
 }
