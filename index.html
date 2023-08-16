@@ -15,12 +15,15 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
-    />
+    />    
+    <link rel="stylesheet" href="node_modules/simplelightbox/dist/simple-lightbox.min.css">
+    <script src="node_modules/simplelightbox/dist/simple-lightbox.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/7b4ac5dfbb.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
     <!-- Modal -->
@@ -176,7 +179,7 @@
             >Skontaktuj się z nami
           </button>
           <a
-            href=""
+            href="#projects"
             class="btn btn-rounded custom-secondary-btn"
             role="button"
             >Zobacz nasze realizcje
@@ -343,7 +346,7 @@
       </div>
     </section>
     <!-- about company  -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container-xxl">
         <div class="row about-company-section p-0">
           <div
@@ -377,42 +380,63 @@
       </div>
     </section>
     <!-- Projects -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container-xxl">
         <div class="row">
           <div class="col-12 projects-header-section">
             <p class="section-paragraph color-green">Realizacje</p>
             <h2 class="header-font display-5">Nasze <span class="fst-italic inter-font">projekty</span></h2>
           </div>
-          <div class="col-12 p-0">
-            <div class="grid">
+          <div class="col-12 p-0"> 
+            <div class="grid grid-backdrop" id="grid-backdrop">
               <div class="grid-item">
-                <img src="utils/jungle_stairs.png" />
-              </div>
-              <div class="grid-item grid-item--width2">
-                <img src="utils/pool_garden.png" />
-              </div>
-              <div class="grid-item">
-                <img src="utils/rose_path.png" />
+                  <a href="utils/jungle_stairs.png">
+                      <img class="gallery-item" src="utils/jungle_stairs.png" alt="Jungle Stairs">
+                  </a>
               </div>
               <div class="grid-item">
-                <img src="utils/mosaic_gazebo.png" />
-              </div> <div class="grid-item">
-                <img src="utils/garden_path.png" />
+                  <a href="utils/pool_garden.png">
+                      <img class="gallery-item" src="utils/pool_garden.png" alt="Pool Garden">
+                  </a>
               </div>
               <div class="grid-item">
-                <img src="utils//fish.png" />
+                  <a href="utils/rose_path.png">
+                      <img class="gallery-item" src="utils/rose_path.png" alt="Rose Path">
+                  </a>
               </div>
               <div class="grid-item">
-                <img src="utils/big_gazebo.png" />
+                  <a href="utils/mosaic_gazebo.png">
+                      <img class="gallery-item" src="utils/mosaic_gazebo.png" alt="Mosaic Gazebo">
+                  </a>
               </div>
               <div class="grid-item">
-                <img src="utils//stairs.png" />
-              </div>  
-              <div class="grid-item">
-                <img src="utils/garden_gazebo.png" />
+                  <a href="utils/garden_path.png">
+                      <img class="gallery-item" src="utils/garden_path.png" alt="Garden Path">
+                  </a>
               </div>
-            </div>      
+              <div class="grid-item">
+                  <a href="utils/fish.png">
+                      <img class="gallery-item" src="utils/fish.png" alt="Fish">
+                  </a>
+              </div>
+              <div class="grid-item">
+                  <a href="utils/big_gazebo.png">
+                      <img class="gallery-item" src="utils/big_gazebo.png" alt="Big Gazebo">
+                  </a>
+              </div>
+              <div class="grid-item">
+                  <a href="utils/stairs.png">
+                      <img class="gallery-item" src="utils/stairs.png" alt="Stairs">
+                  </a>
+              </div>
+              <div class="grid-item">
+                  <a href="utils/garden_gazebo.png">
+                      <img class="gallery-item" src="utils/garden_gazebo.png" alt="Garden Gazebo">
+                  </a>
+              </div>
+              
+          </div>   
+          <button type="button" class="btn btn-outline-dark btn-rounded" id="loadMore"> Więcej</button> 
           </div>
         </div>
       </div>

@@ -1,3 +1,20 @@
+// set up simple lightbox gallery
+const lightbox = new SimpleLightbox(".grid a", {
+  captionsData: "alt",
+  captionPosition: "bottom",
+});
+
+window.onload = () => {
+  const elem = document.querySelector(".grid");
+  const msnry = new Masonry(elem, {
+    // options
+    itemSelector: ".grid-item",
+    gutter: 42,
+    fitWidth: true,
+  });
+};
+
+// modal section
 const modalForm = document.getElementById("contact-modal");
 const modalClose = document.getElementById("exampleModal");
 
@@ -18,15 +35,19 @@ const sendModalMessage = (e) => {
 
 modalForm.addEventListener("submit", sendModalMessage);
 
-// test
+// Project load more
 
-window.onload = () => {
-  const elem = document.querySelector(".grid");
-  const msnry = new Masonry(elem, {
-    // options
-    itemSelector: ".grid-item",
-    gutter: 42,
+const moreBtn = document.getElementById("loadMore");
 
-    fitWidth: true,
-  });
+const loadMorePhoto = () => {
+  // get grid backdrop and remove backdrop
+  const sectionBackdrop = document.getElementById("grid-backdrop");
+  sectionBackdrop.classList.remove("grid-backdrop");
+
+  // hide button
+  moreBtn.classList.add("hide");
+
+  // load more photo
 };
+
+moreBtn.addEventListener("click", loadMorePhoto);
