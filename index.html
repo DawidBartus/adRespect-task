@@ -23,6 +23,69 @@
     ></script>
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Kontakt</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p><a href="tel:+00 000 000 000">000-000-000</a></p>
+            <p>
+              <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+            </p>
+            <form id="contact-modal">
+              <div class="mb-3">
+                <label for="email-address" class="form-label"
+                  >Adres mailowy</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email-address"
+                  aria-describedby="emailHelp"
+                  placeholder="@"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Wiadomość</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="message"
+                  placeholder="Napisz do nas..."
+                ></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Chcę otrzymywać wiadomości z promocjami</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
     <!-- nav section -->
     <div class="container-xxl">
       <nav class="navbar navbar-expand-lg page-navbar">
@@ -75,7 +138,8 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#reservation">Kontakt</a>
+              <button class="nav-link active" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Kontakt</button>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#reservation"
@@ -102,12 +166,15 @@
           podejściem do każdego projektu.
         </p>
         <div class="d-flex gap-3 flex-controller">
-          <a
+          <button
             href=""
             class="btn btn-rounded custom-primary-btn"
-            role="button"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             >Skontaktuj się z nami
-          </a>
+          </button>
           <a
             href=""
             class="btn btn-rounded custom-secondary-btn"
@@ -334,6 +401,7 @@
         <div class="col-4">instagram</div>
       </div>
     </div>
+    <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
