@@ -26,15 +26,15 @@
     <!-- Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="contactModal"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="contactModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Kontakt</h1>
+            <h1 class="modal-title fs-5" id="contactModalLabel">Kontakt</h1>
             <button
               type="button"
               class="btn-close"
@@ -139,7 +139,7 @@
 
             <li class="nav-item">
               <button class="nav-link active" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Kontakt</button>
+              data-bs-target="#contactModal">Kontakt</button>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#reservation"
@@ -153,9 +153,9 @@
     <!-- hero section -->
     <section class="hero">
       <div class="container-xxl hero-section">
-        <div class="row">
+        <div class="row ">
           <div class="col-sm-12 col-md-6 p-0 d-flex
-          flex-column justify-content-center align-items-center p-5 ">
+          flex-column justify-content-center align-items-center px-5">
       <div class="hero-header-container">
         <h2 class="display-3 hero-header header-font">
           Nowoczesna aranżacja  Twojego ogrodu
@@ -172,7 +172,7 @@
             type="button"
             class="btn btn-primary"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#contactModal"
             >Skontaktuj się z nami
           </button>
           <a
@@ -202,44 +202,38 @@
             <div
               id="header-carousel"
               class="carousel slide "
-              data-ride="carousel"
+              data-bs-ride="carousel"
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
                     class="d-block w-100"
                     src="utils/header.png"
-                    alt="photo by-Christian Domingues"
+                    alt="mosaic garden"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     class="d-block w-100"
-                    src="utils/header.png"
-                    alt="photo by Johann"
+                    src="utils/big_gazebo.png"
+                    alt="garden gazebo"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     class="d-block w-100"
-                    src="utils/header.png"
-                    alt="by-Helena Lopes"
+                    src="utils/garden_path.png"
+                    alt="path in garden"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     class="d-block w-100"
-                    src="utils/header.png"
-                    alt="by-freestocks"
+                    src="utils/jungle_stairs.png"
+                    alt="garden with stairs"
                   />
                 </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block w-100"
-                    src="utils/header.png"
-                    alt="by-JacLou- DL"
-                  />
-                </div>
+               
               </div>
               <div class="carousel-control-icons d-flex justify-content-center">
                 <button
@@ -386,11 +380,43 @@
     <section class="projects">
       <div class="container-xxl">
         <div class="row">
-          <div class="col projects-header-section">
+          <div class="col-12 projects-header-section">
             <p class="section-paragraph color-green">Realizacje</p>
             <h2 class="header-font display-5">Nasze <span class="fst-italic inter-font">projekty</span></h2>
           </div>
-          <div class="col"></div>
+          <div class="col-12">
+            <div class="grid">
+              <div class="grid-sizer"></div>
+              <div class="grid-item">
+                <img src="utils/jungle_stairs.png" />
+              </div>
+              <div class="grid-item grid-item--width2">
+                <img src="utils/pool_garden.png" />
+              </div>
+              <div class="grid-item">
+                <img src="utils/rose_path.png" />
+              </div>
+              <div class="grid-item">
+                <img src="utils/mosaic_gazebo.png" />
+              </div>
+              <div class="grid-item">
+                <img src="utils//fish.png" />
+              </div>
+              <div class="grid-item">
+                <img src="utils/garden_path.png" />
+              </div>
+              <div class="grid-item">
+                <img src="utils//stairs.png" />
+              </div>
+              <div class="grid-item">
+                <img src="utils/big_gazebo.png" />
+              </div>
+              <div class="grid-item">
+                <img src="utils/garden_gazebo.png" />
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </section>
@@ -412,5 +438,7 @@
       integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
       crossorigin="anonymous"
     ></script>
+    <!-- masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
   </body>
 </html>

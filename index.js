@@ -17,3 +17,14 @@ const sendModalMessage = (e) => {
 };
 
 modalForm.addEventListener("submit", sendModalMessage);
+
+// test
+
+window.onload = () => {
+  const elem = document.querySelector(".grid");
+  const msnry = new Masonry(elem, {
+    // options
+    itemSelector: ".grid-item",
+    gutter: 10,
+  });
+};
