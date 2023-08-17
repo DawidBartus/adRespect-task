@@ -37,6 +37,13 @@ body {
 .color-green {
   color: var(--primary-green);
 }
+.bg-color-green {
+  background-color: var(--primary-green);
+  border: var(--primary-green);
+}
+.bg-color-green:hover {
+  background-color: var(--light-green);
+}
 .section-paragraph {
   font-family: Inter;
   font-size: 12px;
@@ -45,8 +52,11 @@ body {
   line-height: 150%;
   letter-spacing: -0.12px;
 }
-.hide {
-  display: none;
+/* icons */
+
+.arrow-down {
+  vertical-align: middle;
+  margin-left: 8px;
 }
 /* navigation style */
 .page-navbar {
@@ -60,7 +70,28 @@ body {
     gap: 48px;
   }
 }
-
+.nav-link {
+  cursor: pointer;
+}
+.search-bar-container:hover > .search-bar {
+  top: 210px;
+  @media (min-width: 992px) {
+    top: 15px;
+  }
+}
+.search-bar {
+  transition: 1s;
+  top: -50px;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 8px;
+  outline: 1px solid var(--primary-green);
+  border: 1px solid var(--primary-green);
+  @media (min-width: 992px) {
+    right: 50px;
+    transform: translateX(0);
+  }
+}
 /* header style */
 .hero-section {
   background-color: var(--primary-beige);
@@ -157,13 +188,13 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .hero-row {
-  max-height: 720px;
+  max-height: 737px;
   box-sizing: border-box;
 }
 .carousel-item img {
   width: 100%;
   height: 100%;
-  max-height: 720px;
+  max-height: 737px;
   object-fit: cover;
 }
 
@@ -274,25 +305,36 @@ body {
 .about-info-container {
   max-width: 500px;
 }
+.about-image {
+  max-width: 688px;
+}
 /* projects */
 .projects {
   background-color: var(--primary-beige);
   padding: 120px 0 44px;
   margin-bottom: 60px;
 }
-
+#project-gallery {
+  max-height: 1600px;
+  overflow: auto;
+}
+#project-gallery::-webkit-scrollbar {
+  display: none;
+}
 .projects-header-section {
   margin-bottom: 96px;
 }
-
+#loadMore {
+  max-width: 100px;
+  bottom: 89.5px;
+}
 /* test */
 .grid {
   margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
 }
-.grid-backdrop {
-  height: fit-content;
-}
-.grid-backdrop::after {
+.project-gallery::after {
   transition: 1s;
   content: "";
   position: absolute;
@@ -324,4 +366,16 @@ body {
 }
 .grid-item {
   margin-bottom: 42px;
+}
+/* social media section */
+.instagram-container {
+  background-color: var(--primary-green);
+  /* padding: 120px 110px; */
+}
+
+.social-header {
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: var(--grey);
 }
