@@ -17,7 +17,7 @@ body {
   color: var(--grey) !important;
 }
 .inter-font {
-  font-family: Inter;
+  font-family: Inter !important;
 }
 .fs-paragraph-lg {
   font-size: 16px !important;
@@ -40,6 +40,7 @@ body {
 .flex-controller {
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 36px;
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -70,18 +71,20 @@ body {
 }
 /* navigation style */
 .page-navbar {
-  padding: 16px 0;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
   @media (min-width: 992px) {
-    padding: 16px 85px;
+    padding: 0 89px;
   }
 }
 #navLinks {
+  padding: 25.5px 0;
   @media (min-width: 992px) {
     gap: 48px;
   }
 }
 .nav-link {
-  cursor: pointer;
 }
 .search-bar-clicked {
   top: 210px;
@@ -110,11 +113,25 @@ body {
   outline: 1px solid var(--grey);
   border: 1px solid var(--grey);
 }
+.nav-link-custom {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  color: var(--black, #111);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.14px;
+}
 /* header style */
 .hero-section {
   background-color: var(--primary-beige);
 }
 .hero-header {
+  font-size: 60px;
   line-height: 116%;
 }
 .hero-header-container {
@@ -178,16 +195,25 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 120px;
-  height: 60px;
+  width: 192px;
+  height: 96px;
   background-color: var(--grey);
 }
 #header-carousel {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+#header-carousel svg > path {
+  top: 50%;
+  left: 50%;
 }
 .carousel-inner {
+  position: relative;
+  bottom: 0;
+  left: 32px;
   width: 100%;
+  max-width: 688px;
   height: 100%;
 }
 
@@ -252,7 +278,7 @@ body {
   padding: 48px 40px;
   background-color: var(--white);
   border-radius: 28px;
-
+  box-sizing: border-box;
   max-width: 378px;
   overflow: hidden;
 }
@@ -344,7 +370,6 @@ body {
   box-sizing: border-box;
 }
 .about-company {
-  color: var(--grey);
   padding: 30px 30px;
   justify-content: center;
   @media (min-width: 992px) {
@@ -380,9 +405,10 @@ body {
   background-color: var(--primary-beige);
   padding: 120px 0 44px;
   margin-bottom: 60px;
+  max-height: 1660px;
+  box-sizing: content-box;
 }
 #project-gallery {
-  max-height: 1600px;
   overflow: auto;
 }
 #project-gallery::-webkit-scrollbar {
@@ -437,14 +463,65 @@ body {
 /* social media section */
 .instagram-container {
   background-color: var(--primary-green);
-  padding: 120px 20px;
+  padding: 60px 20px;
+  max-width: 1040px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    padding: 120px 110px;
+  }
+}
+.social-header {
+  color: var(--grey, #f5f0ec);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 48px */
+  letter-spacing: -2px;
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+.btn-social {
+  color: var(--primary-green);
+  border-radius: 200px;
+  background: var(--grey);
+  max-width: 124px;
+  padding: 10px 24px 12px;
+  text-decoration: none;
+  border: 1px solid;
 }
 
-.social-header {
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -2px;
+.btn-social:hover {
+  border: 1px solid var(--grey);
   color: var(--grey);
+  background-color: var(--primary-green);
+}
+.social-font {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1px;
+}
+.instagram-text {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.16px;
+  margin-bottom: 24px;
+  align-self: stretch;
+}
+.insta-btn-holder {
+  max-width: 157px;
+}
+.instagram-wrapper {
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
 }
 /* footer */
 .autograph__path {
@@ -452,7 +529,6 @@ body {
 }
 .page-footer {
   background-color: var(--black);
-  color: var(--grey);
   padding: 80px 12px;
   margin-top: 60px;
 }

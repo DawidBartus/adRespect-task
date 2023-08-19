@@ -12,8 +12,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -98,7 +102,7 @@
       </div>
     </div>
     <!-- nav section -->
-    <div class="container-xxl">
+    <div class="container-xxl p-0">
       <nav class="navbar navbar-expand-lg page-navbar position-relative">
         <a class="navbar-brand" href="#">
           <img src="utils/companySVG.svg" alt="Firmowa grafika" />
@@ -121,14 +125,13 @@
           <ul class="navbar-nav d-flex" id="navLinks">
             <!-- dropdown -->
             <li class="nav-item dropdown">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
+              <a
+                class="dropdown-toggle nav-link-custom"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Oferta
-              </button>
+              </a>
               <div class="dropdown-menu" aria-labelledby="contactNav">
                 <a class="dropdown-item" href="#">Modernizajce</a>
                 <a class="dropdown-item" href="#">Projektowanie</a>
@@ -138,16 +141,16 @@
             </li>
             <!--end dropdown -->
             <li class="nav-item">
-              <a class="nav-link" href="#about"
+              <a class="nav-link-custom" href="#about"
                 >O firmie <span class="sr-only"></span
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#priceList">Realizacje</a>
+              <a class="nav-link-custom" href="#priceList">Realizacje</a>
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link-custom"
                 data-bs-toggle="modal"
                 data-bs-target="#contactModal"
               >
@@ -155,8 +158,25 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link search-bar-container" href="#reservation">
-                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+              <a
+                class="nav-link-custom search-bar-container"
+                href="#reservation"
+              >
+                <!-- <i class="fa-solid fa-magnifying-glass" id="search-icon"></i> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
+                    fill="#111111"
+                  />
+                </svg>
                 <input
                   type="text"
                   name=""
@@ -175,18 +195,19 @@
       <div class="container-xxl hero-section">
         <div class="row">
           <div
-            class="col-sm-12 col-md-6 p-0 d-flex flex-column justify-content-center align-items-center px-5"
+            class="col-sm-12 col-md-6 p-0 d-flex flex-column justify-content-center align-items-center ps-5"
           >
             <div class="hero-header-container observe" data-search="true">
-              <h2 class="display-3 hero-header header-font">
-                Nowoczesna aranżacja Twojego ogrodu
+              <h2 class="hero-header header-font m-0">
+                Nowoczesna aranżacja <br />
+                Twojego ogrodu
               </h2>
               <p class="hero-text">
                 Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
                 realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
                 podejściem do każdego projektu.
               </p>
-              <div class="d-flex gap-3 flex-controller">
+              <div class="d-flex flex-controller">
                 <button
                   href=""
                   class="btn btn-rounded custom-primary-btn"
@@ -254,7 +275,7 @@
                   />
                 </div>
               </div>
-              <div class="carousel-control-icons d-flex justify-content-center">
+              <div class="carousel-control-icons d-flex justify-content-evenly">
                 <button
                   class="btn"
                   type="button"
@@ -282,17 +303,18 @@
                   data-bs-slide="next"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
                     fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z"
+                      d="M37.2049 25.0607C37.7907 24.4749 37.7907 23.5251 37.2049 22.9393L27.6589 13.3934C27.0732 12.8076 26.1234 12.8076 25.5376 13.3934C24.9518 13.9792 24.9518 14.9289 25.5376 15.5147L34.0229 24L25.5376 32.4853C24.9518 33.0711 24.9518 34.0208 25.5376 34.6066C26.1234 35.1924 27.0732 35.1924 27.6589 34.6066L37.2049 25.0607ZM11.8558 25.5H36.1442V22.5H11.8558V25.5Z"
                       fill="black"
                     />
                   </svg>
+
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -303,7 +325,7 @@
     </section>
     <!-- offer section -->
     <section class="offer">
-      <div class="container-xxl">
+      <div class="container-xxl p-0">
         <div class="row offer-section-header observe p-0" data-search="true">
           <p class="section-paragraph color-green">Oferta</p>
           <h2 class="offer-header header-font display-5">
@@ -404,7 +426,7 @@
             />
           </div>
           <div
-            class="col-sm-12 col-md-6 p-5 d-flex align-items-center about-company"
+            class="col-sm-12 col-md-6 p-5 d-flex align-items-center fc-grey about-company"
           >
             <div class="about-info-container observe" data-search="true">
               <p class="section-paragraph">O firmie</p>
@@ -532,29 +554,35 @@
     <!-- Contact -->
     <section class="instagram observe" data-search="true">
       <div class="container">
-        <div class="row instagram-container">
-          <div class="col-12 col-md-8">
-            <h2 class="header-font display-5 social-header">
+        <div class="row instagram-container justify-content-between">
+          <div
+            class="col-12 col-md-9 p-0 d-flex align-items-end"
+            style="max-width: 599px"
+          >
+            <h2 class="header-font fc-grey social-header m-0">
               Zostańmy w kontakcie! <br />
-              Znajdziesz nas na <span class="fst-italic">Instagramie</span>.
+              Znajdziesz nas na
+              <span class="fst-italic inter-font social-font">Instagramie</span
+              >.
             </h2>
           </div>
-          <div class="col-12 col-md-4 w-30">
+          <div class="col-12 col-md-3 d-flex instagram-wrapper">
             <div class="row">
-              <div class="col-12 w-50 fs-paragraph-lg">
-                <p>Śledź nasze najnowsze realizacje!</p>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-rounded btn-outline-dark">
-                  Instagram
-                </button>
+              <div
+                class="col-12 align-items-start p-0 flex-column d-flex fc-grey fs-paragraph-lg insta-btn-holder"
+              >
+                <p class="instagram-text inter-font">
+                  Śledź nasze <br />
+                  najnowsze realizacje!
+                </p>
+                <a href="#" class="btn-rounded btn-social">Instagram</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="page-footer">
+    <footer class="page-footer fc-grey">
       <div class="container footer-section-wrapper p-0">
         <div class="row text-center">
           <div
