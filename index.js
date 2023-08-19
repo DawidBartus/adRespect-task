@@ -182,6 +182,22 @@ const loadMorePhoto = () => {
   lightbox.refresh();
 };
 
+// Section appear observer
+const observeElements = document.querySelectorAll(".observe");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const pageElement = entry.target;
+    if (entry.isIntersecting) {
+      pageElement.classList.add("observer-transition");
+    } else {
+      pageElement.classList.remove("observer-transition");
+    }
+  });
+});
+
+observeElements.forEach((element) => observer.observe(element));
+
 modalForm.addEventListener("submit", sendModalMessage);
 moreBtn.addEventListener("click", loadMorePhoto);
 searchQuery.addEventListener("change", handleSearchInput);
