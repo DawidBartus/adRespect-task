@@ -116,35 +116,35 @@ const sendModalMessage = (e) => {
 
 const betterImageObjects = [
   {
-    src: "/utils/load_more/grill_garden.jpg",
+    src: "utils/load_more/grill_garden.jpg",
     alt: "Ogród z grilem.",
   },
   {
-    src: "/utils/load_more/privacy.jpg",
+    src: "utils/load_more/privacy.jpg",
     alt: "Zakątek prywatności",
   },
   {
-    src: "/utils/load_more/better_city.jpg",
+    src: "utils/load_more/better_city.jpg",
     alt: "Wielkomiejskie przestrzenie",
   },
   {
-    src: "/utils/load_more/modern_garden_2.jpg",
+    src: "utils/load_more/modern_garden_2.jpg",
     alt: "Zagospodarowanie każdego centymetra",
   },
   {
-    src: "/utils/load_more/modern_garden.jpg",
+    src: "utils/load_more/modern_garden.jpg",
     alt: "Mała przytulna przestrzeń",
   },
   {
-    src: "/utils/load_more/outside_the_city.jpg",
+    src: "utils/load_more/outside_the_city.jpg",
     alt: "Poza miastem",
   },
   {
-    src: "/utils/load_more/party_garden.jpg",
+    src: "utils/load_more/party_garden.jpg",
     alt: "Przestrzeń do spędzania czasu z przyjaciółmi",
   },
   {
-    src: "/utils/load_more/stair_garden.png",
+    src: "utils/load_more/stair_garden.png",
     alt: "Przestrzeń do spędzania czasu z przyjaciółmi",
   },
 ];
