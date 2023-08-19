@@ -7,6 +7,7 @@ const modalForm = document.getElementById("contact-modal");
 const modalClose = document.getElementById("exampleModal");
 // search bar
 const searchQuery = document.getElementById("searchInput");
+const searchIcon = document.getElementById("search-icon");
 const searchableElements = document.querySelectorAll(`[data-search="true"]`);
 
 // set up simple lightbox gallery
@@ -31,6 +32,24 @@ const masonryLoadPhotos = () => {
 masonryLoadPhotos();
 
 // nav search handler
+let windowHideInputEvent;
+
+const hideInput = (e) => {
+  if (e.target.id === "search-icon" || e.target.id === "searchInput") {
+    return;
+  }
+  searchQuery.classList.toggle("search-bar-clicked");
+  searchQuery.classList.toggle("search-bar");
+  removeEventListener("click", windowHideInputEvent);
+};
+
+const handleIconClick = () => {
+  windowHideInputEvent = hideInput;
+  window.addEventListener("click", windowHideInputEvent);
+
+  searchQuery.classList.toggle("search-bar-clicked");
+  searchQuery.classList.toggle("search-bar");
+};
 
 const handleSearchInput = () => {
   // change both user query and html element's text to lower case
@@ -95,7 +114,6 @@ const sendModalMessage = (e) => {
   e.target.reset();
 };
 
-// Project load more
 const betterImageObjects = [
   {
     src: "/utils/load_more/grill_garden.jpg",
@@ -153,10 +171,7 @@ const loadMorePhoto = () => {
   // get grid backdrop and remove backdrop
   galleryBackdrop.classList.remove("project-gallery");
 
-  // hide button
   moreBtn.classList.add("d-none");
-
-  // load more photo
   let morePhotos = createHtmlPhotos();
 
   // add photos to DOM
@@ -170,3 +185,4 @@ const loadMorePhoto = () => {
 modalForm.addEventListener("submit", sendModalMessage);
 moreBtn.addEventListener("click", loadMorePhoto);
 searchQuery.addEventListener("change", handleSearchInput);
+searchIcon.addEventListener("click", handleIconClick);
