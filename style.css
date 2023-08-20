@@ -17,13 +17,13 @@ body {
   color: var(--grey) !important;
 }
 .inter-font {
-  font-family: Inter !important;
+  font-family: Inter;
 }
 .fs-paragraph-lg {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 .fs-paragraph-md {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 .fs-paragraph-sm {
   font-size: 12px;
@@ -224,6 +224,9 @@ body {
 .hero-header {
   font-size: 32px;
   line-height: 116%;
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
   @media (min-width: 992px) {
     font-size: 60px;
   }
@@ -432,11 +435,11 @@ body {
   transition: 1s;
   fill: var(--primary-beige);
 }
-
 /* about company section */
 .about-company-section {
   background-color: var(--primary-green);
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .about-company {
@@ -587,9 +590,6 @@ body {
   letter-spacing: -0.16px;
   align-self: stretch;
 }
-.insta-btn-holder {
-  max-width: 157px;
-}
 .instagram-wrapper {
   margin-top: 30px;
   @media (min-width: 768px) {
@@ -602,12 +602,18 @@ body {
 }
 .page-footer {
   background-color: var(--black);
-  padding: 80px 12px;
+  padding: 78px 12px;
   margin-top: 60px;
 }
 .footer-section-wrapper {
   width: 100%;
   max-width: 1040px;
+}
+#footer-social-links a {
+  border-bottom: 1px solid transparent;
+}
+#footer-social-links a:hover {
+  border-bottom: 1px solid white;
 }
 /* observer */
 .observe {

@@ -59,7 +59,9 @@
           <div class="modal-body">
             <form id="contact-modal">
               <div class="mb-3">
-                <label for="email-address" class="form-label">E-mail</label>
+                <label for="email-address" id="emailHelp" class="form-label"
+                  >E-mail</label
+                >
                 <input
                   type="email"
                   class="form-control"
@@ -70,12 +72,14 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="message" class="form-label">Wiadomość</label>
+                <label for="message" id="messageHelp" class="form-label"
+                  >Wiadomość</label
+                >
                 <textarea
-                  type="text"
                   class="form-control"
                   id="message"
                   placeholder="Napisz do nas..."
+                  aria-describedby="messageHelp"
                   required
                 ></textarea>
               </div>
@@ -84,8 +88,12 @@
                   type="checkbox"
                   class="form-check-input"
                   id="promoCheckBox"
+                  aria-describedby="promoHelp"
                 />
-                <label class="form-check-label" for="promoCheckBox"
+                <label
+                  class="form-check-label"
+                  id="promoHelp"
+                  for="promoCheckBox"
                   >Chcę otrzymywać wiadomości z promocjami</label
                 >
               </div>
@@ -130,13 +138,14 @@
             <!-- dropdown -->
             <li class="nav-item dropdown">
               <a
+                href="#"
                 class="dropdown-toggle nav-link-custom"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Oferta
               </a>
-              <div class="dropdown-menu" aria-labelledby="contactNav">
+              <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Modernizajce</a>
                 <a class="dropdown-item" href="#">Projektowanie</a>
                 <a class="dropdown-item" href="#">Wykonanie</a>
@@ -178,14 +187,14 @@
                     fill="#111111"
                   />
                 </svg>
-                <input
-                  type="text"
-                  name=""
-                  id="searchInput"
-                  placeholder="Wyszukaj"
-                  class="position-absolute rounded search-bar p-2 search-bar-basic"
-                />
               </a>
+              <input
+                type="text"
+                name="searchInput"
+                id="searchInput"
+                placeholder="Wyszukaj"
+                class="position-absolute rounded search-bar p-2 search-bar-basic"
+              />
             </li>
           </ul>
         </div>
@@ -212,7 +221,6 @@
                 <button
                   class="btn btn-rounded btn-page-padding btn-standard btn-green-to-transparent"
                   type="button"
-                  class="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#contactModal"
                 >
@@ -387,9 +395,7 @@
                   alt="eye icon"
                 />
               </div>
-              <h3 class="offer-title" style="padding-left: 2px">
-                Wizualizacje
-              </h3>
+              <h3 class="offer-title">Wizualizacje</h3>
               <p class="offer-description">
                 Przedstawimy Ci projekty koncepcyjne <br />w postaci wirtualnego
                 spaceru animowanego w technologii 3D.
@@ -462,7 +468,7 @@
       <div class="container-xxl">
         <div class="row about-company-section p-0">
           <div
-            class="col-sm-12 col-md-6 p-0 d-flex flex-column justify-content-center observe"
+            class="col-sm-12 col-md-6 p-0 d-flex align-items-center align-items-md-start flex-column observe"
           >
             <img
               src="utils/aboutCompany.png"
@@ -491,7 +497,7 @@
                 małoobsługowe, dostosowane do współczesnego trybu życia.
               </p>
               <a
-                href=""
+                href="#"
                 class="btn btn-rounded btn-standard btn-transparent-to-white"
                 style="padding: 12px 22px 14px"
                 >Poznaj nas bliżej<span style="padding-left: 5px">
@@ -649,7 +655,7 @@
           >
             <div class="row">
               <div
-                class="col-12 align-items-start p-0 flex-column d-flex fc-grey fs-paragraph-lg insta-btn-holder"
+                class="col-12 align-items-start p-0 flex-column d-flex fc-grey fs-paragraph-lg"
               >
                 <p class="instagram-text fs-6 mb-4 inter-font">
                   Śledź nasze <br />
@@ -748,10 +754,8 @@
                   Daj znać, co możemy dla Ciebie zrobić!
                 </p>
                 <button
-                  href=""
                   class="btn btn-standard btn-rounded btn-green-to-transparent btn-page-padding mt-3 mt-md-0 fs-paragraph-lg"
                   type="button"
-                  class="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#contactModal"
                   style="box-sizing: border-box"
@@ -771,25 +775,24 @@
           ></div>
           <div
             class="col-12 col-md-12 col-lg-6 page-text-standard d-flex gap-5 justify-content-center justify-content-md-start flex-wrap pb-3"
+            id="footer-social-links"
           >
-            <a
-              href=""
-              class="fs-paragraph-md text-decoration-none fc-grey btn-rounded"
+            <a href="#" class="fs-paragraph-md text-decoration-none fc-grey"
               >Kontakt</a
             >
             <a
-              href=""
-              class="fs-paragraph-md text-decoration-none fc-grey btn-outline btn-rounded"
+              href="#"
+              class="fs-paragraph-md text-decoration-none fc-grey btn-outline"
               >Instagram</a
             >
             <a
-              href=""
-              class="fs-paragraph-md text-decoration-none fc-grey btn-outline btn-rounded"
+              href="#"
+              class="fs-paragraph-md text-decoration-none fc-grey btn-outline"
               >Facebook</a
             >
             <a
-              href=""
-              class="fs-paragraph-md text-decoration-none fc-grey btn-outline btn-rounded"
+              href="#"
+              class="fs-paragraph-md text-decoration-none fc-grey btn-outline"
               >LinkedIn</a
             >
           </div>
