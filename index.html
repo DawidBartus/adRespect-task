@@ -91,7 +91,7 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-rounded bg-color-green btn-primary"
+                class="btn btn-rounded btn-standard bg-color-green btn-primary"
               >
                 Wyślij
               </button>
@@ -158,17 +158,14 @@
               </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link-custom search-bar-container"
-                href="#reservation"
-              >
-                <!-- <i class="fa-solid fa-magnifying-glass" id="search-icon"></i> -->
+              <a class="nav-link-custom" href="#reservation">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
+                  id="search-icon"
                 >
                   <path
                     fill-rule="evenodd"
@@ -209,7 +206,7 @@
               </p>
               <div class="d-flex flex-controller">
                 <button
-                  class="btn btn-rounded custom-primary-btn"
+                  class="btn btn-rounded btn-page-padding btn-standard btn-green-to-transparent"
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
@@ -219,10 +216,9 @@
                 </button>
                 <a
                   href="#projects"
-                  class="btn btn-rounded custom-secondary-btn"
+                  class="btn btn-rounded btn-standard btn-page-padding-sm btn-transparent-to-green"
                   role="button"
-                  style="padding-left: 22px; padding-right: 22px"
-                  >Zobacz nasze realizcje<svg
+                  >Zobacz nasze realizacje<svg
                     class="arrow-down"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -465,7 +461,7 @@
             <img
               src="utils/aboutCompany.png"
               alt="Ogród w stylu azjatyckim"
-              class="img-fluid about-image"
+              class="img-fluid"
             />
           </div>
           <div
@@ -486,9 +482,9 @@
               </p>
               <a
                 href=""
-                class="btn btn-rounded about-btn"
+                class="btn btn-rounded btn-standard btn-transparent-to-white"
                 style="padding: 12px 22px 14px"
-                >Poznaj nas bliżej<span style="padding-left: 8px">
+                >Poznaj nas bliżej<span style="padding-left: 5px">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -514,103 +510,111 @@
       id="projects"
       data-search="true"
     >
-      <div class="container-xxl p-0 observe">
-        <div class="row">
-          <div class="col-12 projects-header-section">
-            <p class="section-paragraph color-green">Realizacje</p>
-            <h2 class="header-font project-header">
-              Nasze <span class="italic-style">projekty</span>
-            </h2>
-          </div>
-          <div class="col-12 p-0 project-gallery" id="project-gallery">
-            <div class="grid" id="grid-backdrop">
-              <div class="grid-item">
-                <a href="utils/resized_photos/jungle_stairs_xxl.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/jungle_stairs.png"
-                    alt="Jungle Stairs"
-                  />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/pool_garden_xxl.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/pool_garden.png"
-                    alt="Pool Garden"
-                  />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/rose_path_xxl.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/rose_path.png"
-                    alt="Rose Path"
-                  />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/mosaic_gazebo_xxl.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/mosaic_gazebo.png"
-                    alt="Mosaic Gazebo"
-                  />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/garden_path_xxl.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/garden_path.png"
-                    alt="Garden Path"
-                  />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/fish_xxl.png">
-                  <img class="gallery-item" src="utils/fish.png" alt="Fish" />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/big_gazebo_xxl.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/big_gazebo.png"
-                    alt="Big Gazebo"
-                  />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/stairs_xxl.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/stairs.png"
-                    alt="Stairs"
-                  />
-                </a>
-              </div>
-              <div class="grid-item">
-                <a href="utils/resized_photos/garden_gazebo_xll.png">
-                  <img
-                    class="gallery-item"
-                    src="utils/garden_gazebo.png"
-                    alt="Garden Gazebo"
-                  />
-                </a>
-              </div>
+      <div class="container-xxl p-0">
+        <div class="projects-header-section observe">
+          <p class="section-paragraph color-green">Realizacje</p>
+          <h2 class="header-font project-header">
+            Nasze <span class="italic-style">projekty</span>
+          </h2>
+        </div>
+        <div class="p-0 project-gallery" id="project-gallery">
+          <div class="grid" id="grid-backdrop">
+            <div class="grid-item">
+              <a href="utils/resized_photos/jungle_stairs_xxl.png">
+                <img
+                  class="gallery-item"
+                  src="utils/jungle_stairs.png"
+                  alt="Jungle Stairs"
+                />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/pool_garden_xxl.png">
+                <img
+                  class="gallery-item"
+                  src="utils/pool_garden.png"
+                  alt="Pool Garden"
+                />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/rose_path_xxl.png">
+                <img
+                  class="gallery-item"
+                  src="utils/rose_path.png"
+                  alt="Rose Path"
+                />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/fish_xxl.png">
+                <img class="gallery-item" src="utils/fish.png" alt="Fish" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/garden_path_xxl.png">
+                <img
+                  class="gallery-item"
+                  src="utils/garden_path.png"
+                  alt="Garden Path"
+                />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/mosaic_gazebo_xxl.png">
+                <img
+                  class="gallery-item"
+                  src="utils/mosaic_gazebo.png"
+                  alt="Mosaic Gazebo"
+                />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/big_gazebo_xxl.png">
+                <img
+                  class="gallery-item"
+                  src="utils/big_gazebo.png"
+                  alt="Big Gazebo"
+                />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/stairs_xxl.png">
+                <img class="gallery-item" src="utils/stairs.png" alt="Stairs" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="utils/resized_photos/garden_gazebo_xll.png">
+                <img
+                  class="gallery-item"
+                  src="utils/garden_gazebo.png"
+                  alt="Garden Gazebo"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
       <button
         type="button"
-        class="btn btn-outline-dark btn-rounded position-absolute start-50 translate-middle-x"
+        class="btn btn-outline-dark btn-rounded btn-page-padding position-absolute start-50 translate-middle-x"
         id="loadMore"
+        style="box-sizing: content-box"
       >
-        Więcej
+        <span
+          >Rozwiń
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="17"
+            viewBox="0 0 16 17"
+            fill="none"
+          >
+            <path
+              d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
+            />
+          </svg>
+        </span>
       </button>
     </section>
     <!-- Contact -->
@@ -637,13 +641,18 @@
                   Śledź nasze <br />
                   najnowsze realizacje!
                 </p>
-                <a href="#" class="btn-rounded btn-social">Instagram</a>
+                <a
+                  href="#"
+                  class="btn-rounded btn-standard btn-white-to-transparent"
+                  >Instagram</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- footer -->
     <footer class="page-footer fc-grey">
       <div class="container footer-section-wrapper p-0">
         <div class="row text-center">
@@ -724,7 +733,7 @@
               <div class="col-12 col-md-5">
                 <button
                   href=""
-                  class="btn btn-rounded custom-primary-btn fs-paragraph-lg"
+                  class="btn btn-rounded btn-green-to-transparent btn-page-padding fs-paragraph-lg"
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"

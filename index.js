@@ -23,7 +23,7 @@ const masonryLoadPhotos = () => {
     const elem = document.querySelector(".grid");
     const msnry = new Masonry(elem, {
       itemSelector: ".grid-item",
-      gutter: 30,
+      gutter: 43,
       fitWidth: true,
     });
   });
@@ -197,7 +197,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-// observeElements.forEach((element) => observer.observe(element));
+observeElements.forEach((element) => observer.observe(element));
 
 modalForm.addEventListener("submit", sendModalMessage);
 moreBtn.addEventListener("click", loadMorePhoto);
