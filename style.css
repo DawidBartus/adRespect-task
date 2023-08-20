@@ -88,6 +88,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  border: 0px;
 }
 .btn-page-padding {
   padding: 12px 24px 14px;
@@ -238,14 +239,20 @@ body {
   }
 }
 .carousel-control-icons {
+  scale: 0.7;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -20px;
+  right: -29px;
+  background-color: var(--grey);
   width: 192px;
   height: 96px;
-  background-color: var(--grey);
   padding-left: 12px;
   padding-bottom: 5px;
+  @media (min-width: 768px) {
+    scale: 1;
+    bottom: 0;
+    right: 0;
+  }
 }
 #header-carousel {
   width: 100%;
