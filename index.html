@@ -103,8 +103,8 @@
     </div>
     <!-- nav section -->
     <div class="container-xxl p-0">
-      <nav class="navbar navbar-expand-lg page-navbar position-relative">
-        <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-lg page-navbar">
+        <a class="mb-1 navbar-brand" href="#">
           <img src="utils/companySVG.svg" alt="Firmowa grafika" />
         </a>
         <button
@@ -122,7 +122,11 @@
           class="collapse navbar-collapse justify-content-end text-center"
           id="navbarNav"
         >
-          <ul class="navbar-nav d-flex" id="navLinks">
+          <ul
+            class="navbar-nav d-flex gap-lg-5"
+            id="navLinks"
+            style="background-color: white"
+          >
             <!-- dropdown -->
             <li class="nav-item dropdown">
               <a
@@ -179,7 +183,7 @@
                   name=""
                   id="searchInput"
                   placeholder="Wyszukaj"
-                  class="position-absolute rounded search-bar search-bar-basic"
+                  class="position-absolute rounded search-bar p-2 search-bar-basic"
                 />
               </a>
             </li>
@@ -207,6 +211,7 @@
               <div class="d-flex flex-controller">
                 <button
                   class="btn btn-rounded btn-page-padding btn-standard btn-green-to-transparent"
+                  style="border: 0px"
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
@@ -328,7 +333,7 @@
             Działamy
             <span class="display-5 italic-style">kompleksowo</span>
           </h2>
-          <p class="offer-header-description">
+          <p class="offer-header-description mt-4">
             Oferujemy kompletną obsługę inwestycji terenów zielonych.
             Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
             Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie,
@@ -343,6 +348,7 @@
                   src="utils/pencilIcon.png"
                   class="offer-icon"
                   alt="pencil icon"
+                  style="margin-bottom: 35px"
                 />
               </div>
               <h3 class="offer-title">Projekty</h3>
@@ -351,9 +357,9 @@
                 wykorzystaniem istniejącej przestrzeni.
               </p>
             </div>
-            <a href="#" class="offer-link"
+            <a href="#" class="offer-link pb-1"
               >Dowiedz się więcej
-              <span style="padding-left: 8px"
+              <span class="ps-2"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -369,7 +375,7 @@
               </span>
             </a>
             <div class="overlay">
-              <h3 class="overlay-offer-title">Projekty</h3>
+              <h3 class="overlay-offer-title p-2">Projekty</h3>
               <img src="utils/pool_garden.png" alt="" />
             </div>
           </div>
@@ -390,7 +396,7 @@
                 spaceru animowanego w technologii 3D.
               </p>
             </div>
-            <a href="#" class="offer-link"
+            <a href="#" class="offer-link pb-1"
               >Dowiedz się więcej
               <span style="padding-left: 8px"
                 ><svg
@@ -408,7 +414,7 @@
             ></a>
 
             <div class="overlay">
-              <h3 class="overlay-offer-title">Wizualizacje</h3>
+              <h3 class="overlay-offer-title p-2">Wizualizacje</h3>
               <img src="utils/stairs.png" alt="" />
             </div>
           </div>
@@ -427,7 +433,7 @@
                 zaawansowanych technologii.
               </p>
             </div>
-            <a href="#projects" class="offer-link"
+            <a href="#projects" class="offer-link pb-1"
               >Zobacz nasze realizacje
               <span style="padding-left: 8px">
                 <svg
@@ -445,7 +451,7 @@
               </span>
             </a>
             <div class="overlay">
-              <h3 class="overlay-offer-title">Realizacje</h3>
+              <h3 class="overlay-offer-title p-2">Realizacje</h3>
               <img src="utils/mosaic_gazebo.png" alt="" />
             </div>
           </div>
@@ -469,7 +475,10 @@
           <div
             class="col-sm-12 col-md-6 d-flex align-items-start justify-content-evenly fc-grey about-company"
           >
-            <div class="about-info-container observe" data-search="true">
+            <div
+              class="about-info-container pb-5 pb-mb-0 observe"
+              data-search="true"
+            >
               <p class="section-paragraph fc-grey">O firmie</p>
               <h2 class="header-font" style="margin-bottom: 40px">
                 Tworzymy z <span class="italic-style">pasją</span>
@@ -515,11 +524,11 @@
       <div class="container-xxl p-0">
         <div class="projects-header-section observe">
           <p class="section-paragraph color-green">Realizacje</p>
-          <h2 class="header-font project-header">
+          <h2 class="header-font fw-medium projects-header">
             Nasze <span class="italic-style">projekty</span>
           </h2>
         </div>
-        <div class="p-0 project-gallery" id="project-gallery">
+        <div class="p-0 projects-gallery" id="projects-gallery">
           <div class="grid" id="grid-backdrop">
             <div class="grid-item">
               <a href="utils/resized_photos/jungle_stairs_xxl.png">
@@ -599,7 +608,7 @@
       </div>
       <button
         type="button"
-        class="btn btn-outline-dark btn-rounded btn-page-padding position-absolute start-50 translate-middle-x"
+        class="btn btn-outline-dark btn-rounded btn-page-padding-sm position-absolute start-50 translate-middle-x"
         id="loadMore"
         style="box-sizing: content-box"
       >
@@ -611,6 +620,7 @@
             height="17"
             viewBox="0 0 16 17"
             fill="none"
+            style="margin-left: 4px"
           >
             <path
               d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
@@ -627,19 +637,22 @@
             class="col-12 col-md-9 p-0 d-flex align-items-end"
             style="max-width: 599px"
           >
-            <h2 class="header-font fc-grey social-header m-0">
+            <h2 class="header-font fc-grey social-header">
               Zostańmy w kontakcie! <br />
               Znajdziesz nas na
-              <span class="fst-italic inter-font social-font">Instagramie</span
+              <span class="fst-italic inter-font social-font fw-medium"
+                >Instagramie</span
               >.
             </h2>
           </div>
-          <div class="col-12 col-md-3 d-flex instagram-wrapper">
+          <div
+            class="col-12 col-md-3 d-flex align-items-end justify-content-center justify-content-md-end instagram-wrapper"
+          >
             <div class="row">
               <div
                 class="col-12 align-items-start p-0 flex-column d-flex fc-grey fs-paragraph-lg insta-btn-holder"
               >
-                <p class="instagram-text inter-font">
+                <p class="instagram-text fs-6 mb-4 inter-font">
                   Śledź nasze <br />
                   najnowsze realizacje!
                 </p>
@@ -655,11 +668,11 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="page-footer d-flex fc-grey" style="height: 600px">
+    <footer class="page-footer d-flex fc-grey">
       <div class="container footer-section-wrapper p-0">
         <div class="row">
           <div
-            class="col-12 col-md-5 d-flex justify-content-start align-items-center footer-logo"
+            class="col-12 col-md-5 d-flex justify-content-start align-items-center mb-5 mb-md-0"
           >
             <a href="#">
               <svg
@@ -729,13 +742,15 @@
           </div>
           <div class="col-12 col-md-7 fs-paragraph-lg">
             <div class="row">
-              <div class="col-12 d-flex align-items-center justify-content-end">
-                <p class="m-0 page-text-standard" style="padding-right: 24px">
+              <div
+                class="col-12 d-flex align-items-center flex-wrap justify-content-center justify-content-md-end"
+              >
+                <p class="m-0 page-text-standard pe-sm-4">
                   Daj znać, co możemy dla Ciebie zrobić!
                 </p>
                 <button
                   href=""
-                  class="btn btn-rounded btn-green-to-transparent btn-page-padding fs-paragraph-lg"
+                  class="btn btn-rounded btn-green-to-transparent btn-page-padding mt-3 mt-md-0 fs-paragraph-lg"
                   type="button"
                   class="btn btn-primary"
                   data-bs-toggle="modal"
@@ -755,7 +770,7 @@
             "
           ></div>
           <div
-            class="col-12 col-md-12 col-lg-6 page-text-standard d-flex gap-5"
+            class="col-12 col-md-12 col-lg-6 page-text-standard d-flex gap-5 justify-content-center justify-content-md-start flex-wrap pb-3"
           >
             <a
               href=""
@@ -779,7 +794,7 @@
             >
           </div>
           <div
-            class="col-12 col-md-12 col-lg-6 fs-paragraph-md d-flex justify-content-end gap-5"
+            class="col-12 col-md-12 col-lg-6 fs-paragraph-md d-flex justify-content-center justify-content-md-end gap-5"
           >
             <a class="text-decoration-none fc-grey" href="tel:+000-000-000"
               >000-000-000</a
@@ -791,16 +806,12 @@
             >
           </div>
           <div
-            class="col-12 d-flex justify-content-between page-text-standard"
-            style="margin-top: 118px"
+            class="col-12 d-flex flex-wrap justify-content-center justify-content-md-between page-text-standard"
+            style="margin-top: 100px"
           >
             <p>Prawa zastrzeżone © 2022</p>
             <p>
-              made by<img
-                src="utils/logo-full-light.png"
-                alt=""
-                style="padding-left: 16px"
-              />
+              made by<img src="utils/logo-full-light.png" alt="" class="ps-3" />
             </p>
           </div>
         </div>

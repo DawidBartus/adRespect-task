@@ -1,6 +1,6 @@
 // gallery
 const moreBtn = document.getElementById("loadMore");
-const galleryBackdrop = document.getElementById("project-gallery");
+const galleryBackdrop = document.getElementById("projects-gallery");
 const gallery = document.getElementById("grid-backdrop");
 // modal
 const modalForm = document.getElementById("contact-modal");
@@ -169,7 +169,7 @@ const createHtmlPhotos = () => {
 
 const loadMorePhoto = () => {
   // get grid backdrop and remove backdrop
-  galleryBackdrop.classList.remove("project-gallery");
+  galleryBackdrop.classList.remove("projects-gallery");
 
   moreBtn.classList.add("d-none");
   let morePhotos = createHtmlPhotos();
