@@ -170,7 +170,7 @@ body {
   margin: 23px 0;
 }
 .search-bar-clicked {
-  top: 210px;
+  top: 200px;
   opacity: 1;
   right: 50%;
   transform: translateX(50%);
