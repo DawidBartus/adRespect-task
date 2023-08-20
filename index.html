@@ -195,7 +195,7 @@
       <div class="container-xxl hero-section">
         <div class="row">
           <div
-            class="col-sm-12 col-md-6 p-0 d-flex flex-column justify-content-center align-items-center ps-5"
+            class="col-sm-12 col-md-6 p-0 d-flex flex-column justify-content-center align-items-center"
           >
             <div class="hero-header-container observe" data-search="true">
               <h2 class="hero-header header-font m-0">
@@ -209,7 +209,6 @@
               </p>
               <div class="d-flex flex-controller">
                 <button
-                  href=""
                   class="btn btn-rounded custom-primary-btn"
                   type="button"
                   class="btn btn-primary"
@@ -222,16 +221,17 @@
                   href="#projects"
                   class="btn btn-rounded custom-secondary-btn"
                   role="button"
+                  style="padding-left: 22px; padding-right: 22px"
                   >Zobacz nasze realizcje<svg
                     class="arrow-down"
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
+                    height="17"
+                    viewBox="0 0 16 17"
                     fill="none"
                   >
                     <path
-                      d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00472 16.5L16 8.49529Z"
+                      d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
                       fill="#1B5B31"
                     />
                   </svg>
@@ -239,7 +239,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 p-0">
+          <div class="col-sm-12 col-md-6 p-0 d-flex carousel-holder">
             <div
               id="header-carousel"
               class="carousel slide"
@@ -314,7 +314,6 @@
                       fill="black"
                     />
                   </svg>
-
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -330,19 +329,7 @@
           <p class="section-paragraph color-green">Oferta</p>
           <h2 class="offer-header header-font display-5">
             Działamy
-            <span
-              class=""
-              style="
-                color: var(--black, #111);
-                font-family: Inter;
-                font-size: 48px;
-                font-style: italic;
-                font-weight: 500;
-                line-height: 115%;
-                letter-spacing: normal;
-              "
-              >kompleksowo</span
-            >
+            <span class="display-5 italic-style">kompleksowo</span>
           </h2>
           <p class="offer-header-description">
             Oferujemy kompletną obsługę inwestycji terenów zielonych.
@@ -368,8 +355,22 @@
               </p>
             </div>
             <a href="#" class="offer-link"
-              >Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i
-            ></a>
+              >Dowiedz się więcej
+              <span style="padding-left: 8px"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                    fill="#1B5B31"
+                  />
+                </svg>
+              </span>
+            </a>
             <div class="overlay">
               <h3 class="overlay-offer-title">Projekty</h3>
               <img src="utils/pool_garden.png" alt="" />
@@ -377,21 +378,36 @@
           </div>
           <div class="col-md-6 col-lg-4 observe offer-box fs-paragraph-md">
             <div class="offer-box-body">
-              <div class="icon">
+              <div class="icon" style="padding-top: 7px; margin-bottom: 8px">
                 <img
                   src="utils/eyeIcon.png"
                   class="offer-icon"
                   alt="eye icon"
                 />
               </div>
-              <h3 class="offer-title">Wizualizacje</h3>
+              <h3 class="offer-title" style="padding-left: 2px">
+                Wizualizacje
+              </h3>
               <p class="offer-description">
                 Przedstawimy Ci projekty koncepcyjne <br />w postaci wirtualnego
                 spaceru animowanego w technologii 3D.
               </p>
             </div>
             <a href="#" class="offer-link"
-              >Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i
+              >Dowiedz się więcej
+              <span style="padding-left: 8px"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                    fill="#1B5B31"
+                  />
+                </svg> </span
             ></a>
 
             <div class="overlay">
@@ -414,9 +430,23 @@
                 zaawansowanych technologii.
               </p>
             </div>
-            <a href="#" class="offer-link"
-              >Dowiedz się więcej <i class="fa-solid fa-arrow-right"></i
-            ></a>
+            <a href="#projects" class="offer-link"
+              >Zobacz nasze realizacje
+              <span style="padding-left: 8px">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                    fill="#1B5B31"
+                  />
+                </svg>
+              </span>
+            </a>
             <div class="overlay">
               <h3 class="overlay-offer-title">Realizacje</h3>
               <img src="utils/mosaic_gazebo.png" alt="" />
@@ -439,12 +469,12 @@
             />
           </div>
           <div
-            class="col-sm-12 col-md-6 p-5 d-flex align-items-center fc-grey about-company"
+            class="col-sm-12 col-md-6 d-flex align-items-start justify-content-evenly fc-grey about-company"
           >
             <div class="about-info-container observe" data-search="true">
-              <p class="section-paragraph">O firmie</p>
-              <h2 class="header-font">
-                Tworzymy z <span class="fst-italic inter-font">pasją</span>
+              <p class="section-paragraph fc-grey">O firmie</p>
+              <h2 class="header-font" style="margin-bottom: 40px">
+                Tworzymy z <span class="italic-style">pasją</span>
               </h2>
               <p class="about-company-text">
                 Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
@@ -454,6 +484,25 @@
                 minimalizm, geometria i elegancka prostota. Tworzymy ogrody
                 małoobsługowe, dostosowane do współczesnego trybu życia.
               </p>
+              <a
+                href=""
+                class="btn btn-rounded about-btn"
+                style="padding: 12px 22px 14px"
+                >Poznaj nas bliżej<span style="padding-left: 8px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
+                      fill="#1B5B31"
+                    />
+                  </svg>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -465,12 +514,12 @@
       id="projects"
       data-search="true"
     >
-      <div class="container-xxl observe">
+      <div class="container-xxl p-0 observe">
         <div class="row">
           <div class="col-12 projects-header-section">
             <p class="section-paragraph color-green">Realizacje</p>
-            <h2 class="header-font display-5">
-              Nasze <span class="fst-italic inter-font">projekty</span>
+            <h2 class="header-font project-header">
+              Nasze <span class="italic-style">projekty</span>
             </h2>
           </div>
           <div class="col-12 p-0 project-gallery" id="project-gallery">

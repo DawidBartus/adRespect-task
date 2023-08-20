@@ -184,6 +184,7 @@ const loadMorePhoto = () => {
 
 // Section appear observer
 const observeElements = document.querySelectorAll(".observe");
+observeElements.forEach((elem) => elem.classList.add("observer-transition"));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -196,7 +197,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-observeElements.forEach((element) => observer.observe(element));
+// observeElements.forEach((element) => observer.observe(element));
 
 modalForm.addEventListener("submit", sendModalMessage);
 moreBtn.addEventListener("click", loadMorePhoto);
