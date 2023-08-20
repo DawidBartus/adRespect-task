@@ -225,6 +225,7 @@
                     height="17"
                     viewBox="0 0 16 17"
                     fill="none"
+                    style="margin-left: 8px"
                   >
                     <path
                       d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"
@@ -462,6 +463,7 @@
               src="utils/aboutCompany.png"
               alt="Ogród w stylu azjatyckim"
               class="img-fluid"
+              style="max-height: 720px; max-width: 688px"
             />
           </div>
           <div
@@ -653,9 +655,9 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="page-footer fc-grey">
+    <footer class="page-footer d-flex fc-grey" style="height: 600px">
       <div class="container footer-section-wrapper p-0">
-        <div class="row text-center">
+        <div class="row">
           <div
             class="col-12 col-md-5 d-flex justify-content-start align-items-center footer-logo"
           >
@@ -727,10 +729,10 @@
           </div>
           <div class="col-12 col-md-7 fs-paragraph-lg">
             <div class="row">
-              <div class="col-12 col-md-7 d-flex align-items-center">
-                <p class="m-0">Daj znać, co możemy dla ciebie zrobić!</p>
-              </div>
-              <div class="col-12 col-md-5">
+              <div class="col-12 d-flex align-items-center justify-content-end">
+                <p class="m-0 page-text-standard" style="padding-right: 24px">
+                  Daj znać, co możemy dla Ciebie zrobić!
+                </p>
                 <button
                   href=""
                   class="btn btn-rounded btn-green-to-transparent btn-page-padding fs-paragraph-lg"
@@ -749,37 +751,57 @@
             style="
               border-bottom: 1px solid white;
               max-width: 1040px;
-              margin: 62px 0;
+              margin: 61px 0;
             "
           ></div>
-          <div class="col-12 col-md-12 col-lg-6">
-            <a href="" class="fs-paragraph-md fc-grey btn btn-rounded"
+          <div
+            class="col-12 col-md-12 col-lg-6 page-text-standard d-flex gap-5"
+          >
+            <a
+              href=""
+              class="fs-paragraph-md text-decoration-none fc-grey btn-rounded"
               >Kontakt</a
-            ><a
+            >
+            <a
               href=""
-              class="fs-paragraph-md fc-grey btn btn-outline btn-rounded"
+              class="fs-paragraph-md text-decoration-none fc-grey btn-outline btn-rounded"
               >Instagram</a
-            ><a
+            >
+            <a
               href=""
-              class="fs-paragraph-md fc-grey btn btn-outline btn-rounded"
+              class="fs-paragraph-md text-decoration-none fc-grey btn-outline btn-rounded"
               >Facebook</a
-            ><a
+            >
+            <a
               href=""
-              class="fs-paragraph-md fc-grey btn btn-outline btn-rounded"
+              class="fs-paragraph-md text-decoration-none fc-grey btn-outline btn-rounded"
               >LinkedIn</a
             >
           </div>
-          <div class="col-12 col-md-12 col-lg-6 fs-paragraph-md">
-            <a class="btn fc-grey" href="tel:+000-000-000">000-000-000</a>
-            <a class="btn fc-grey" href="mailto:giarddesign@kontakt.pl"
+          <div
+            class="col-12 col-md-12 col-lg-6 fs-paragraph-md d-flex justify-content-end gap-5"
+          >
+            <a class="text-decoration-none fc-grey" href="tel:+000-000-000"
+              >000-000-000</a
+            >
+            <a
+              class="text-decoration-none fc-grey"
+              href="mailto:giarddesign@kontakt.pl"
               >giarddesign@kontakt.pl</a
             >
           </div>
-          <div class="col-12 col-md-6 fs-paragraph-lg">
-            <p>Prawa zastrzeone @ 2022</p>
-          </div>
-          <div class="col-12 col-md-6 fs-paragraph-lg">
-            <p>made by adRespect</p>
+          <div
+            class="col-12 d-flex justify-content-between page-text-standard"
+            style="margin-top: 118px"
+          >
+            <p>Prawa zastrzeżone © 2022</p>
+            <p>
+              made by<img
+                src="utils/logo-full-light.png"
+                alt=""
+                style="padding-left: 16px"
+              />
+            </p>
           </div>
         </div>
       </div>
